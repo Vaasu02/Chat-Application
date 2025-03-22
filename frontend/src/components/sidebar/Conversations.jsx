@@ -4,7 +4,8 @@ import { getRandomEmoji } from "../../utils/emojis";
 
 const Conversations = () => {
   const { loading, conversations } = useGetConversation();
-  console.log("ALL COnversation:", conversations);
+  console.log("ALL Conversations with details:", conversations);
+  
   return (
     <div className="py-2 flex flex-col overflow-auto">
       {conversations.map((conversation,idx) => (
